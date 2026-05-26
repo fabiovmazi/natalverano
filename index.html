@@ -1,0 +1,2677 @@
+<!DOCTYPE html>
+<!--
+========================================================
+GUIA DIGITAL - NATAL VERANO 401A
+========================================================
+
+Estrutura do projeto:
+
+1. CONFIGURAÇÕES GERAIS
+2. ESTILOS CSS
+3. HERO / MENU PRINCIPAL
+4. INFORMAÇÕES GERAIS
+5. WI-FI
+6. GARAGEM
+7. REGRAS
+8. INSTRUÇÕES
+9. EQUIPAMENTOS
+10. LIXO
+11. EMERGÊNCIA
+12. CHECK-OUT
+13. RODAPÉ
+
+========================================================
+OBSERVAÇÕES IMPORTANTES
+========================================================
+
+IMAGENS UTILIZADAS:
+
+- Capa principal:
+imagens/capa2.jpg
+
+- Garagem:
+imagens/garagem.png
+
+========================================================
+PERSONALIZAÇÃO RÁPIDA
+========================================================
+
+ALTERAR TELEFONE:
+Procure por:
+5584999210423
+
+ALTERAR WIFI:
+Procure por:
+NATALVERANO401A
+apto401a
+
+ALTERAR ENDEREÇO:
+Rua da Campina nº 140
+
+========================================================
+-->
+
+<html lang="pt-BR">
+
+<head>
+
+<!-- ======================================================
+META TAGS
+====================================================== -->
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Natal Verano 401A</title>
+
+<!-- ======================================================
+FONTES GOOGLE
+====================================================== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- ======================================================
+ICONS FONT AWESOME
+====================================================== -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<!-- ======================================================
+CSS PRINCIPAL
+====================================================== -->
+
+<style>
+
+
+
+
+
+
+
+
+
+
+/* ======================================================
+CORES E VARIÁVEIS GLOBAIS
+====================================================== */
+
+:root{
+
+    --navy:#0c1b33;
+    --navy-light:#13284a;
+
+    --white:#ffffff;
+    --gray:#f4f6f9;
+
+    --text:#1f2937;
+
+    --red:#d84b4b;
+    --green:#25D366;
+
+    --shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    --radius:26px;
+}
+
+/* ======================================================
+RESET CSS
+====================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ======================================================
+SCROLL SUAVE
+====================================================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ======================================================
+BODY PRINCIPAL
+====================================================== */
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:var(--gray);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+/* ======================================================
+IMAGENS
+====================================================== */
+
+img{
+    width:100%;
+    display:block;
+    border-radius:24px;
+}
+
+/* ======================================================
+LINKS
+====================================================== */
+
+a{
+    text-decoration:none;
+}
+
+/* ======================================================
+CONTAINER PADRÃO
+====================================================== */
+
+.container{
+    width:92%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* ======================================================
+SEÇÕES
+====================================================== */
+
+section{
+    padding:70px 0;
+}
+
+/* ======================================================
+TÍTULOS DAS SEÇÕES
+====================================================== */
+
+.section-title{
+
+    font-size:2rem;
+    font-weight:700;
+
+    color:var(--navy);
+
+    margin-bottom:28px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.section-title i{
+    color:var(--red);
+}
+
+/* ======================================================
+HERO / CAPA PRINCIPAL
+====================================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(5,15,30,0.55), rgba(5,15,30,0.60)),
+    url('imagens/piscina.png') center/cover no-repeat;
+
+    background-attachment:fixed;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+/* ======================================================
+LOGO HERO
+====================================================== */
+
+.hero-logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:30px;
+}
+
+.hero-logo img{
+
+    width:240px;
+
+    max-width:80%;
+
+    object-fit:contain;
+
+    filter:
+    drop-shadow(0 10px 25px rgba(0,0,0,0.35));
+}
+
+
+
+
+
+
+.hero{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(5,15,30,0.55), rgba(5,15,30,0.60)),
+    url('imagens/piscina.png') center/cover no-repeat;
+
+    background-attachment:fixed;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+.hero-content{
+    width:100%;
+    max-width:900px;
+}
+
+.hero small{
+    color:#fff;
+    letter-spacing:6px;
+    font-size:0.9rem;
+}
+
+.hero h1{
+
+    color:#fff;
+
+    font-size:3rem;
+
+    margin-top:15px;
+
+    font-weight:700;
+}
+
+/* ======================================================
+GRID DOS BOTÕES PRINCIPAIS
+====================================================== */
+
+.hero-grid{
+
+    margin-top:40px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(120px,1fr));
+
+    gap:18px;
+}
+
+/* ======================================================
+BOTÕES DO MENU PRINCIPAL
+====================================================== */
+
+.hero-card{
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    border-radius:24px;
+
+    padding:22px 10px;
+
+    color:#fff;
+
+    transition:0.3s;
+}
+
+.hero-card:hover{
+
+    transform:translateY(-5px);
+
+    background:rgba(255,255,255,0.18);
+}
+
+.hero-card i{
+
+    font-size:1.5rem;
+
+    margin-bottom:12px;
+}
+
+.hero-card span{
+    display:block;
+    font-size:0.95rem;
+}
+
+/* ======================================================
+BOTÃO WHATSAPP
+====================================================== */
+
+.whatsapp-btn{
+
+    margin-top:35px;
+
+    display:inline-flex;
+
+    align-items:center;
+    gap:10px;
+
+    background:var(--green);
+
+    color:#fff;
+
+    padding:18px 30px;
+
+    border-radius:60px;
+
+    font-weight:600;
+
+    box-shadow:var(--shadow);
+
+    transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+    transform:scale(1.04);
+}
+
+/* ======================================================
+CARD PADRÃO
+====================================================== */
+
+.card{
+
+    background:#fff;
+
+    border-radius:var(--radius);
+
+    padding:24px;
+
+    box-shadow:var(--shadow);
+}
+
+/* ======================================================
+GRID 2 COLUNAS
+====================================================== */
+
+.grid-2{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:28px;
+}
+
+/* ======================================================
+LISTA DE INFORMAÇÕES
+====================================================== */
+
+.info-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-top:20px;
+}
+
+/* ======================================================
+ITEM DE INFORMAÇÃO
+====================================================== */
+
+.info-item{
+
+    display:flex;
+
+    gap:14px;
+
+    align-items:flex-start;
+}
+
+.info-item i{
+
+    color:var(--red);
+
+    margin-top:4px;
+}
+
+/* ======================================================
+BOTÃO MAPA
+====================================================== */
+
+.map-btn{
+
+    margin-top:22px;
+
+    display:inline-block;
+
+    background:var(--navy);
+
+    color:#fff;
+
+    padding:14px 24px;
+
+    border-radius:18px;
+
+    font-weight:500;
+}
+
+/* ======================================================
+BOX WIFI
+====================================================== */
+
+.wifi-box{
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+.wifi-box h3{
+
+    color:var(--navy);
+
+    margin-bottom:20px;
+
+    font-size:1.8rem;
+}
+
+/* ======================================================
+CARTÕES WIFI
+====================================================== */
+
+.wifi-data{
+
+    margin:14px 0;
+
+    background:var(--gray);
+
+    border-radius:18px;
+
+    padding:18px;
+}
+
+.wifi-data strong{
+
+    display:block;
+
+    color:var(--red);
+
+    margin-bottom:8px;
+}
+
+/* ======================================================
+LISTA DE REGRAS
+====================================================== */
+
+.rules-list{
+
+    display:grid;
+
+    gap:18px;
+}
+
+.rule-item{
+
+    background:#fff;
+
+    padding:20px;
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.rule-item i{
+
+    color:var(--red);
+
+    font-size:1.2rem;
+}
+
+/* ======================================================
+INSTRUÇÕES
+====================================================== */
+
+.instructions{
+
+    display:grid;
+
+    gap:18px;
+}
+
+.instruction-card{
+
+    background:#fff;
+
+    padding:24px;
+
+    border-radius:24px;
+
+    box-shadow:var(--shadow);
+}
+
+.instruction-card h4{
+
+    margin-bottom:10px;
+
+    color:var(--navy);
+}
+
+/* ======================================================
+EQUIPAMENTOS
+====================================================== */
+
+/* ======================================================
+EQUIPAMENTOS
+====================================================== */
+
+.equip-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:18px;
+
+    align-items:stretch;
+}
+
+.equip-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:20px 12px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    min-height:185px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:flex-start;
+}
+
+.equip-card i{
+
+    width:54px;
+
+    height:54px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:#f4f6f9;
+
+    color:var(--navy);
+
+    font-size:1.45rem;
+
+    margin-bottom:14px;
+
+    flex-shrink:0;
+}
+
+.equip-card p{
+
+    font-size:0.95rem;
+
+    font-weight:600;
+
+    line-height:1.25;
+
+    min-height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+}
+
+.equip-card small{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    justify-content:center;
+
+    text-align:center;
+
+    line-height:1.35;
+
+    color:#6b7280;
+
+    font-size:0.8rem;
+
+    min-height:42px;
+
+    margin-top:8px;
+}
+
+/* TABLET */
+
+@media(max-width:1100px){
+
+    .equip-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+}
+
+/* CELULAR */
+
+@media(max-width:768px){
+
+    .equip-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .equip-card{
+
+        min-height:170px;
+    }
+
+    .equip-card i{
+
+        width:48px;
+
+        height:48px;
+
+        font-size:1.3rem;
+    }
+}
+
+@media(max-width:520px){
+
+    .equip-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:14px;
+    }
+
+    .equip-card{
+
+        min-height:165px;
+
+        padding:18px 10px;
+    }
+
+    .equip-card i{
+
+        width:42px;
+
+        height:42px;
+
+        font-size:1.15rem;
+    }
+
+    .equip-card p{
+
+        font-size:0.88rem;
+    }
+
+    .equip-card small{
+
+        font-size:0.75rem;
+    }
+}
+
+
+
+
+/* ======================================================
+EMERGÊNCIA
+====================================================== */
+
+.emergency-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    margin-top:30px;
+}
+
+.emergency-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:28px 20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:0.3s;
+}
+
+.emergency-card:hover{
+
+    transform:translateY(-4px);
+}
+
+.emergency-icon{
+
+    width:64px;
+
+    height:64px;
+
+    margin:auto;
+
+    margin-bottom:18px;
+
+    border-radius:20px;
+
+    background:#f4f6f9;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--red);
+
+    font-size:1.5rem;
+}
+
+.emergency-card span{
+
+    display:block;
+
+    color:#6b7280;
+
+    margin-bottom:10px;
+}
+
+.emergency-card strong{
+
+    color:var(--navy);
+
+    font-size:1.3rem;
+}
+
+/* ======================================================
+CHECKOUT
+====================================================== */
+
+.checkout-box{
+
+    background:#fff;
+
+    border-radius:32px;
+
+    padding:40px;
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+}
+
+.checkout-box h2{
+
+    color:var(--navy);
+
+    margin-bottom:28px;
+
+    font-size:2rem;
+}
+
+.checkout-list{
+
+    display:grid;
+
+    gap:16px;
+
+    margin-bottom:30px;
+}
+
+.checkout-item{
+
+    background:#f4f6f9;
+
+    border-radius:18px;
+
+    padding:18px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    font-weight:500;
+
+    color:var(--text);
+}
+
+.checkout-item i{
+
+    color:var(--red);
+
+    font-size:1.1rem;
+}
+
+
+
+
+
+
+/* ======================================================
+PASSEIOS / RESTAURANTES
+====================================================== */
+
+.tour-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:22px;
+
+    margin-top:25px;
+}
+
+.tour-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.tour-card:hover{
+
+    transform:translateY(-4px);
+}
+
+.tour-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:18px;
+
+    background:#eef5ff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+    margin-bottom:18px;
+}
+
+.tour-card h3{
+
+    color:#2c5d8a;
+
+    margin-bottom:12px;
+
+    font-size:20px;
+}
+
+.tour-card p{
+
+    color:#555;
+
+    line-height:1.6;
+
+    margin-bottom:18px;
+
+    font-size:15px;
+}
+
+.tour-card a{
+
+    display:inline-block;
+
+    color:#2c5d8a;
+
+    font-weight:600;
+
+    text-decoration:none;
+}
+
+.tour-card a:hover{
+
+    text-decoration:underline;
+}
+
+/* ======================================================
+FOOTER
+====================================================== */
+
+footer{
+
+    background:var(--navy);
+
+    color:#fff;
+
+    padding:50px 20px;
+
+    margin-top:60px;
+}
+
+.footer-content{
+
+    text-align:center;
+}
+
+.footer-content h3{
+
+    margin-bottom:10px;
+
+    font-size:1.5rem;
+}
+
+.footer-content p{
+
+    opacity:0.8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ======================================================
+HERO / MENU PRINCIPAL
+====================================================== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-logo">
+
+<img src="imagens/logo.png"
+alt="Natal Verano">
+
+</div>
+
+<small>BEM-VINDO</small>
+
+
+
+<!-- MENU DE NAVEGAÇÃO -->
+
+<div class="hero-grid">
+
+<!-- BOTÃO CHECK-IN -->
+<a href="#checkin" class="hero-card">
+<i class="fa-solid fa-key"></i>
+<span>Check-in</span>
+</a>
+
+<!-- BOTÃO GERAL -->
+<a href="#geral" class="hero-card">
+<i class="fa-solid fa-circle-info"></i>
+<span>Geral</span>
+</a>
+
+<!-- BOTÃO WIFI -->
+<a href="#wifi" class="hero-card">
+<i class="fa-solid fa-wifi"></i>
+<span>Wi-Fi</span>
+</a>
+
+<!-- BOTÃO GARAGEM -->
+<a href="#garagem" class="hero-card">
+<i class="fa-solid fa-square-parking"></i>
+<span>Garagem</span>
+</a>
+
+<!-- BOTÃO REGRAS -->
+<a href="#regras" class="hero-card">
+<i class="fa-solid fa-scroll"></i>
+<span>Regras</span>
+</a>
+
+<!-- BOTÃO INSTRUÇÕES -->
+<a href="#instrucoes" class="hero-card">
+<i class="fa-solid fa-house"></i>
+<span>Instruções</span>
+</a>
+
+<!-- BOTÃO EQUIPAMENTOS -->
+<a href="#equipamentos" class="hero-card">
+<i class="fa-solid fa-tv"></i>
+<span>Equipamentos</span>
+</a>
+
+<!-- BOTÃO LIXO -->
+<a href="#lixo" class="hero-card">
+<i class="fa-solid fa-trash"></i>
+<span>Lixo</span>
+</a>
+
+<!-- BOTÃO EMERGÊNCIA -->
+<a href="#emergencia" class="hero-card">
+<i class="fa-solid fa-triangle-exclamation"></i>
+<span>Emergência</span>
+</a>
+
+<!-- BOTÃO CONTATO -->
+<a href="https://wa.me/5584999210423" 
+class="hero-card"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+<span>Contato</span>
+
+</a>
+
+<!-- BOTÃO CHECKOUT -->
+<a href="#checkout" class="hero-card">
+<i class="fa-solid fa-door-open"></i>
+<span>Check-out</span>
+</a>
+
+
+<!-- Passeios -->
+<a href="#passeios" class="hero-card">
+<i class="fa-solid fa-umbrella-beach"></i>
+<span>Passeios</span>
+</a>
+
+</div>
+
+
+
+<!-- BOTÃO WHATSAPP -->
+
+<a class="whatsapp-btn"
+href="https://wa.me/5584999210423"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+SUPORTE ANFITRIÃO
+</a>
+</div>
+</section>
+<!--
+
+<!-- GERAL -->
+
+<section id="geral">
+
+<div class="container">
+
+
+
+<h2 class="section-title">
+<i class="fa-solid fa-location-dot"></i>
+Informações Gerais
+</h2>
+
+<div class="grid-2" style="align-items:center;">
+
+<div style="position:relative;">
+
+<img 
+    src="imagens/capa2.jpg"
+    alt="Natal Verano 401A"
+    style="
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        border-radius:32px;
+        box-shadow:0 18px 45px rgba(0,0,0,0.14);
+    "
+>
+
+<div style="
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    background:rgba(12,27,51,0.88);
+    backdrop-filter:blur(10px);
+    color:white;
+    padding:14px 20px;
+    border-radius:20px;
+    font-size:0.95rem;
+    font-weight:500;
+    box-shadow:0 10px 25px rgba(0,0,0,0.18);
+">
+    ✨ Ambiente completo e aconchegante
+</div>
+
+</div>
+
+<div class="card" style="
+    padding:38px;
+    border-radius:32px;
+">
+
+<div style="
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:22px;
+">
+
+<div style="
+    width:54px;
+    height:54px;
+    background:#eef2f7;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+">
+    <i class="fa-solid fa-location-dot" style="
+        color:#d84b4b;
+        font-size:1.2rem;
+    "></i>
+</div>
+
+<div>
+    <h3 style="
+        color:#0c1b33;
+        font-size:1.4rem;
+        margin-bottom:3px;
+    ">
+        Natal Verano 401A
+    </h3>
+
+    <p style="
+        color:#6b7280;
+        font-size:0.95rem;
+    ">
+        Hospedagem premium em Natal/RN
+    </p>
+</div>
+
+</div>
+
+<div class="info-list">
+
+<div class="info-item">
+<i class="fa-solid fa-location-dot"></i>
+<div>
+<strong>Endereço</strong><br>
+Rua da Campina nº 140
+</div>
+</div>
+
+<div class="info-item">
+<i class="fa-solid fa-building"></i>
+<div>
+<strong>Apartamento</strong><br>
+401A
+</div>
+</div>
+
+<div class="info-item">
+<i class="fa-solid fa-phone"></i>
+<div>
+<strong>Telefone</strong><br>
+(84) 99921-0423
+</div>
+</div>
+
+<div class="info-item">
+<i class="fa-solid fa-bed"></i>
+<div>
+<strong>Itens fornecidos</strong><br>
+Toalhas e lençóis inclusos na hospedagem
+</div>
+</div>
+
+</div>
+
+<a class="map-btn" target="_blank"
+href="https://maps.google.com/?q=Rua+da+Campina+140+Natal+RN"
+style="
+    margin-top:30px;
+    border-radius:18px;
+    padding:16px 24px;
+    box-shadow:0 10px 20px rgba(12,27,51,0.12);
+">
+<i class="fa-solid fa-map-location-dot"></i>
+&nbsp;
+Abrir Google Maps
+</a>
+
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CHECK-IN -->
+
+<!-- CHECK-IN -->
+
+<section id="checkin">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-key"></i>
+Check-in
+</h2>
+
+<!-- TODOS OS CARDS FICAM DENTRO DA MESMA DIV -->
+<div class="instructions">
+
+
+<!-- HORÁRIO DE ENTRADA -->
+
+<div class="instruction-card" style="
+    border-left:6px solid #d84b4b;
+    background:#fff;
+    padding:28px;
+">
+
+<h4 style="margin-bottom:14px;">
+<i class="fa-regular fa-clock"></i>
+&nbsp;
+Horário de entrada
+</h4>
+
+<p>
+A partir das <strong>14:00h</strong>.
+</p>
+
+
+<p style="
+    margin-top:14px;
+    color:#6b7280;
+    line-height:1.6;
+">
+Caso deseje chegar antes, consulte previamente a disponibilidade.
+</p>
+
+
+
+<p style="
+    margin-top:12px;
+    color:#6b7280;
+">
+Pode ser solicitado documento na entrada.
+</p>
+
+</div>
+
+
+
+<!-- ACESSO AO CONDOMÍNIO -->
+
+<div class="instruction-card" style="
+    border:2px solid #d84b4b;
+    background:linear-gradient(135deg,#fff5f5,#ffffff);
+">
+
+<div style="
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:18px;
+">
+
+<div style="
+    width:58px;
+    height:58px;
+    background:#d84b4b;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:1.4rem;
+    box-shadow:0 10px 20px rgba(216,75,75,0.25);
+">
+<i class="fa-solid fa-id-card"></i>
+</div>
+
+<div>
+
+<h4 style="
+    margin:0;
+    color:#0c1b33;
+    font-size:1.3rem;
+">
+Acesso ao Condomínio
+</h4>
+
+<p style="
+    margin-top:4px;
+    color:#d84b4b;
+    font-weight:600;
+    font-size:0.95rem;
+">
+ENVIO OBRIGATÓRIO ANTES DA CHEGADA
+</p>
+
+</div>
+
+</div>
+
+<div style="
+    background:white;
+    border-radius:22px;
+    padding:22px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+">
+
+<p style="
+    margin-bottom:18px;
+    font-weight:500;
+">
+Enviar antecipadamente:
+</p>
+
+<div class="info-list">
+
+<div class="info-item">
+<i class="fa-solid fa-user"></i>
+<div>
+<strong>Nome completo e CPF</strong><br>
+de todos os hóspedes
+</div>
+</div>
+
+<div class="info-item">
+<i class="fa-solid fa-camera"></i>
+<div>
+<strong>Foto do rosto</strong><br>
+para liberação no reconhecimento facial do condomínio
+</div>
+</div>
+
+<div class="info-item">
+<i class="fa-solid fa-circle-info"></i>
+<div>
+A foto pode ser enviada por apenas um dos hóspedes
+</div>
+</div>
+
+</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/5584999210423"
+target="_blank"
+style="margin-top:28px;">
+
+<i class="fa-brands fa-whatsapp"></i>
+ENVIAR DADOS DO CHECK-IN
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- ACESSO AO APARTAMENTO -->
+
+<div class="instruction-card" style="
+    border-left:6px solid #d84b4b;
+    background:#fff;
+    padding:28px;
+">
+
+<h4 style="margin-bottom:14px;">
+<i class="fa-solid fa-lock"></i>
+&nbsp;
+Acesso ao Apartamento
+</h4>
+
+<p>
+O acesso ao apartamento é realizado por fechadura digital com senha.
+</p>
+
+<div style="
+    margin-top:18px;
+    background:#f4f6f9;
+    padding:18px;
+    border-radius:18px;
+">
+
+<strong style="
+    color:#0c1b33;
+    letter-spacing:0.5px;
+">
+SENHA DA PORTA
+</strong>
+
+<p style="
+    margin-top:8px;
+    font-size:1.05rem;
+    font-weight:600;
+    color:#d84b4b;
+">
+Retirar a senha com anfitrião
+</p>
+
+</div>
+
+<p style="margin-top:16px;">
+O travamento ocorre automaticamente ao fechar a porta.
+</p>
+
+<p style="
+    margin-top:12px;
+    color:#6b7280;
+">
+Não compartilhe sua senha com terceiros ou na portaria.
+</p>
+
+</div>
+
+
+</div> <!-- FIM instructions -->
+
+</div> <!-- FIM container -->
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- WIFI -->
+
+<section id="wifi">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-wifi"></i>
+Wi-Fi
+</h2>
+
+<div class="grid-2">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card wifi-box">
+
+<h3>Internet Premium</h3>
+
+<div class="wifi-data">
+<strong>REDE</strong>
+NATALVERANO401A
+</div>
+
+<div class="wifi-data">
+<strong>SENHA</strong>
+apto401a
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GARAGEM -->
+
+<section id="garagem">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-square-parking"></i>
+Garagem e Acesso
+</h2>
+
+<div class="grid-2">
+
+<img 
+    src="imagens/garagem.png"
+    alt="Mapa da garagem"
+    style="
+        width:100%;
+        border-radius:28px;
+        box-shadow:0 15px 40px rgba(0,0,0,0.12);
+        background:#fff;
+        padding:12px;
+    "
+>
+
+<div class="card">
+
+<div class="info-list">
+
+<div class="info-item">
+<i class="fa-solid fa-car"></i>
+<div>
+<strong>Vaga 401</strong><br>
+Piso superior
+</div>
+</div>
+
+<div class="info-item">
+<i class="fa-solid fa-ban"></i>
+<div>
+Não estacionar em outra vaga
+</div>
+</div>
+
+<div class="info-item">
+<i class="fa-solid fa-elevator"></i>
+<div>
+Uso obrigatório do elevador de serviço para malas, compras, roupas de banho e lixo.
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REGRAS -->
+
+<section id="regras">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-scroll"></i>
+Regras do Apartamento
+</h2>
+
+<div class="rules-list">
+
+<div class="rule-item">
+<i class="fa-solid fa-volume-low"></i>
+Silêncio após 22h
+</div>
+
+<div class="rule-item">
+<i class="fa-solid fa-smoking"></i>
+Não fumar
+</div>
+
+<div class="rule-item">
+<i class="fa-solid fa-couch"></i>
+Não sentar molhado no sofá
+</div>
+
+<div class="rule-item">
+<i class="fa-solid fa-face-smile"></i>
+Não usar toalhas para maquiagem (taxa extra)
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- INSTRUÇÕES -->
+
+<section id="instrucoes">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-house"></i>
+Instruções do Apartamento
+</h2>
+
+<div class="instructions">
+
+
+
+
+
+<div class="instruction-card" style="
+    border-left:6px solid #d84b4b;
+    background:#fff;
+    padding:28px;
+">
+
+<h4 style="
+    margin-bottom:14px;
+    color:#0c1b33;
+">
+<i class="fa-solid fa-window-maximize"></i>
+&nbsp;
+Janelas
+</h4>
+
+<p style="
+    line-height:1.7;
+    color:#4b5563;
+">
+Mantenha as janelas fechadas em caso de chuva ou ao sair do apartamento.
+</p>
+
+</div>
+
+
+
+<div class="instruction-card">
+<h4>Ar-condicionado</h4>
+<p>Desligar ao sair do apartamento.</p>
+
+</div>
+
+
+
+
+<div class="instruction-card">
+<h4>Smart TV</h4>
+<p>Usar botão INPUT e controle Roku.</p>
+</div>
+
+<div class="instruction-card">
+<h4>Cozinha</h4>
+<p>Deixar louça limpa e organizada.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- EQUIPAMENTOS -->
+
+<!-- ======================================================
+EQUIPAMENTOS
+====================================================== -->
+
+<section id="equipamentos">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-tv"></i>
+Equipamentos
+</h2>
+
+<!-- ======================================================
+GRID DE EQUIPAMENTOS
+• Layout responsivo automático
+• Ícones SVG personalizados
+• Todos os ícones no mesmo padrão visual
+====================================================== -->
+
+<div class="equip-grid">
+
+<!-- ======================================================
+AR-CONDICIONADO
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<path d="M32 10V18" stroke="#0c1b33" stroke-width="4" stroke-linecap="round"/>
+<path d="M32 46V54" stroke="#0c1b33" stroke-width="4" stroke-linecap="round"/>
+
+<path d="M10 32H18" stroke="#0c1b33" stroke-width="4" stroke-linecap="round"/>
+<path d="M46 32H54" stroke="#0c1b33" stroke-width="4" stroke-linecap="round"/>
+
+<path d="M18 18L24 24" stroke="#0c1b33" stroke-width="4" stroke-linecap="round"/>
+<path d="M40 40L46 46" stroke="#0c1b33" stroke-width="4" stroke-linecap="round"/>
+
+<path d="M46 18L40 24" stroke="#0c1b33" stroke-width="4" stroke-linecap="round"/>
+<path d="M18 46L24 40" stroke="#0c1b33" stroke-width="4" stroke-linecap="round"/>
+
+<circle cx="32" cy="32" r="6" fill="#0c1b33"/>
+
+</svg>
+
+<p><strong>Ar-condicionado</strong></p>
+<small>Ambientes climatizados</small>
+
+</div>
+
+
+<!-- ======================================================
+QUARTO CASAL
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+<rect x="6" y="26" width="52" height="18" rx="4" fill="#0c1b33"/>
+<rect x="10" y="18" width="18" height="10" rx="3" fill="#0c1b33"/>
+<rect x="36" y="18" width="18" height="10" rx="3" fill="#0c1b33"/>
+<rect x="6" y="44" width="4" height="10" fill="#0c1b33"/>
+<rect x="54" y="44" width="4" height="10" fill="#0c1b33"/>
+</svg>
+
+<p><strong>Suíte casal</strong></p>
+<small>Banheiro privativo • Lençóis fornecidos</small>
+
+</div>
+
+<!-- ======================================================
+QUARTO SOLTEIRO
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+<rect x="10" y="26" width="40" height="18" rx="4" fill="#0c1b33"/>
+<rect x="14" y="18" width="14" height="10" rx="3" fill="#0c1b33"/>
+<rect x="10" y="44" width="4" height="10" fill="#0c1b33"/>
+<rect x="46" y="44" width="4" height="10" fill="#0c1b33"/>
+</svg>
+
+<p><strong>Quarto solteiro</strong></p>
+<small>Segundo banheiro • Lençóis fornecidos</small>
+</div>
+
+<!-- ======================================================
+SOFÁ
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<rect x="12" y="24" width="40" height="16" rx="6" fill="#0c1b33"/>
+<rect x="16" y="18" width="12" height="10" rx="4" fill="#0c1b33"/>
+<rect x="36" y="18" width="12" height="10" rx="4" fill="#0c1b33"/>
+
+<rect x="14" y="40" width="4" height="8" fill="#0c1b33"/>
+<rect x="46" y="40" width="4" height="8" fill="#0c1b33"/>
+
+</svg>
+
+<p><strong>Sofá</strong></p>
+<small>2 lugares</small>
+
+</div>
+
+<!-- ======================================================
+SMART TV
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<rect x="10" y="14" width="44" height="28" rx="4" fill="#0c1b33"/>
+<rect x="26" y="44" width="12" height="4" fill="#0c1b33"/>
+<rect x="22" y="48" width="20" height="3" rx="2" fill="#0c1b33"/>
+
+</svg>
+
+<p><strong>Smart TV</strong></p>
+<small>Streaming e entretenimento</small>
+
+</div>
+
+<!-- ======================================================
+WI-FI
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<path d="M14 26C24 16 40 16 50 26" stroke="#0c1b33" stroke-width="4" stroke-linecap="round"/>
+<path d="M20 34C28 26 36 26 44 34" stroke="#0c1b33" stroke-width="4" stroke-linecap="round"/>
+<path d="M28 42C30 40 34 40 36 42" stroke="#0c1b33" stroke-width="4" stroke-linecap="round"/>
+<circle cx="32" cy="48" r="3" fill="#0c1b33"/>
+
+</svg>
+
+<p><strong>Wi-Fi</strong></p>
+<small>Internet premium</small>
+
+</div>
+
+<!-- ======================================================
+ESCRITÓRIO
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<!-- TAMPO -->
+<rect x="12" y="20" width="40" height="8" rx="2" fill="#0c1b33"/>
+
+<!-- PERNAS -->
+<rect x="16" y="28" width="4" height="18" fill="#0c1b33"/>
+<rect x="44" y="28" width="4" height="18" fill="#0c1b33"/>
+
+<!-- NOTEBOOK -->
+<rect x="24" y="10" width="16" height="10" rx="2" fill="#0c1b33"/>
+<rect x="22" y="20" width="20" height="2" fill="#0c1b33"/>
+
+<!-- CADEIRA -->
+<rect x="26" y="36" width="12" height="6" rx="2" fill="#0c1b33"/>
+<rect x="30" y="42" width="4" height="8" fill="#0c1b33"/>
+
+</svg>
+
+<p><strong>Escritório</strong></p>
+<small>Mesa de trabalho</small>
+
+</div>
+
+<!-- ======================================================
+SALA DE JANTAR
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<!-- MESA -->
+<rect x="18" y="24" width="28" height="6" rx="2" fill="#0c1b33"/>
+
+<!-- PERNAS -->
+<rect x="20" y="30" width="3" height="14" fill="#0c1b33"/>
+<rect x="41" y="30" width="3" height="14" fill="#0c1b33"/>
+
+<!-- CADEIRAS -->
+<rect x="10" y="24" width="6" height="12" rx="2" fill="#0c1b33"/>
+<rect x="48" y="24" width="6" height="12" rx="2" fill="#0c1b33"/>
+
+</svg>
+
+<p><strong>Sala de jantar</strong></p>
+<small>Mesa com cadeiras</small>
+
+</div>
+
+<!-- ======================================================
+GELADEIRA
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<rect x="18" y="10" width="28" height="44" rx="4" fill="#0c1b33"/>
+<rect x="18" y="30" width="28" height="2" fill="#ffffff"/>
+<rect x="38" y="18" width="2" height="8" rx="1" fill="#ffffff"/>
+<rect x="38" y="36" width="2" height="8" rx="1" fill="#ffffff"/>
+
+</svg>
+
+<p><strong>Geladeira</strong></p>
+<small>Cozinha equipada</small>
+
+</div>
+
+<!-- ======================================================
+FOGÃO
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<rect x="14" y="18" width="36" height="30" rx="4" fill="#0c1b33"/>
+
+<circle cx="24" cy="28" r="3" fill="#ffffff"/>
+<circle cx="40" cy="28" r="3" fill="#ffffff"/>
+
+<rect x="22" y="36" width="20" height="8" rx="2" fill="#ffffff"/>
+
+</svg>
+
+<p><strong>Fogão</strong></p>
+<small>Com depurador</small>
+
+</div>
+
+<!-- ======================================================
+SUGGAR / DEPURADOR
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<rect x="12" y="18" width="40" height="10" rx="3" fill="#0c1b33"/>
+
+<rect x="20" y="28" width="24" height="4" rx="2" fill="#0c1b33"/>
+
+<path d="M22 38C22 38 20 42 22 46" stroke="#0c1b33" stroke-width="3" stroke-linecap="round"/>
+<path d="M32 38C32 38 30 42 32 46" stroke="#0c1b33" stroke-width="3" stroke-linecap="round"/>
+<path d="M42 38C42 38 40 42 42 46" stroke="#0c1b33" stroke-width="3" stroke-linecap="round"/>
+
+</svg>
+
+<p><strong>Suggar</strong></p>
+<small>Depurador de ar</small>
+
+</div>
+
+<!-- ======================================================
+FILTRO DE ÁGUA
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<path d="M32 12C24 22 20 28 20 36C20 44 25 50 32 50C39 50 44 44 44 36C44 28 40 22 32 12Z" fill="#0c1b33"/>
+
+</svg>
+
+<p><strong>Filtro de água</strong></p>
+<small>Água filtrada</small>
+
+</div>
+
+<!-- ======================================================
+CAFETEIRA
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<rect x="18" y="20" width="20" height="22" rx="4" fill="#0c1b33"/>
+<rect x="38" y="24" width="8" height="12" rx="4" stroke="#0c1b33" stroke-width="3"/>
+<rect x="16" y="42" width="28" height="4" rx="2" fill="#0c1b33"/>
+
+</svg>
+
+<p><strong>Cafeteira</strong></p>
+<small>Café no apartamento</small>
+
+</div>
+
+<!-- ======================================================
+MICRO-ONDAS
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<rect x="10" y="16" width="44" height="32" rx="4" fill="#0c1b33"/>
+<rect x="16" y="22" width="24" height="16" rx="2" fill="#ffffff"/>
+
+<circle cx="46" cy="24" r="2" fill="#ffffff"/>
+<circle cx="46" cy="32" r="2" fill="#ffffff"/>
+<circle cx="46" cy="40" r="2" fill="#ffffff"/>
+
+</svg>
+
+<p><strong>Micro-ondas</strong></p>
+<small>Praticidade no dia a dia</small>
+
+</div>
+
+<!-- ======================================================
+TORRADEIRA
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<rect x="16" y="22" width="32" height="20" rx="6" fill="#0c1b33"/>
+
+<rect x="22" y="14" width="6" height="12" rx="2" fill="#0c1b33"/>
+<rect x="36" y="14" width="6" height="12" rx="2" fill="#0c1b33"/>
+
+<rect x="48" y="28" width="4" height="8" rx="2" fill="#0c1b33"/>
+
+</svg>
+
+<p><strong>Torradeira</strong></p>
+<small>Café da manhã</small>
+
+</div>
+
+<!-- ======================================================
+LIQUIDIFICADOR
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<path d="M24 10H40L38 30C37 36 35 40 32 40C29 40 27 36 26 30L24 10Z" fill="#0c1b33"/>
+
+<rect x="26" y="6" width="12" height="4" rx="2" fill="#0c1b33"/>
+
+<rect x="22" y="42" width="20" height="10" rx="3" fill="#0c1b33"/>
+
+<circle cx="32" cy="47" r="2" fill="#ffffff"/>
+
+</svg>
+
+<p><strong>Liquidificador</strong></p>
+<small>Uso livre</small>
+
+</div>
+
+<!-- ======================================================
+MÁQUINA DE LAVAR
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<rect x="14" y="10" width="36" height="44" rx="4" fill="#0c1b33"/>
+
+<rect x="14" y="10" width="36" height="8" rx="4" fill="#13284a"/>
+
+<circle cx="32" cy="34" r="10" fill="#ffffff"/>
+
+<circle cx="42" cy="14" r="2" fill="#ffffff"/>
+
+</svg>
+
+<p><strong>Máquina de lavar</strong></p>
+<small>Lavagem de roupas</small>
+
+</div>
+
+<!-- ======================================================
+UTENSÍLIOS
+====================================================== -->
+
+<div class="equip-card">
+
+<svg width="54" height="54" viewBox="0 0 64 64" fill="none">
+
+<circle cx="32" cy="32" r="14" stroke="#0c1b33" stroke-width="4"/>
+<circle cx="32" cy="32" r="7" stroke="#0c1b33" stroke-width="3"/>
+
+<rect x="14" y="14" width="2" height="16" fill="#0c1b33"/>
+<rect x="12" y="14" width="1.5" height="6" fill="#0c1b33"/>
+<rect x="14" y="14" width="1.5" height="6" fill="#0c1b33"/>
+<rect x="16" y="14" width="1.5" height="6" fill="#0c1b33"/>
+<rect x="14" y="30" width="2" height="18" fill="#0c1b33"/>
+
+<rect x="48" y="14" width="3" height="34" rx="2" fill="#0c1b33"/>
+
+</svg>
+
+<p><strong>Utensílios</strong></p>
+<small>Cozinha completa</small>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ======================================================
+EMERGÊNCIA
+====================================================== -->
+
+<section id="emergencia">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-triangle-exclamation"></i>
+Emergência
+</h2>
+
+<!-- ======================================================
+GRID DE EMERGÊNCIA
+====================================================== -->
+
+<div class="emergency-grid">
+
+<!-- POLÍCIA -->
+
+<div class="emergency-card">
+
+<div class="emergency-icon">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+
+<span>Polícia</span>
+
+<strong>190</strong>
+
+</div>
+
+<!-- SAMU -->
+
+<div class="emergency-card">
+
+<div class="emergency-icon">
+<i class="fa-solid fa-truck-medical"></i>
+</div>
+
+<span>SAMU</span>
+
+<strong>192</strong>
+
+</div>
+
+<!-- BOMBEIROS -->
+
+<div class="emergency-card">
+
+<div class="emergency-icon">
+<i class="fa-solid fa-fire-extinguisher"></i>
+</div>
+
+<span>Bombeiros</span>
+
+<strong>193</strong>
+
+</div>
+
+<!-- SUPORTE -->
+
+<div class="emergency-card">
+
+<div class="emergency-icon">
+<i class="fa-brands fa-whatsapp"></i>
+</div>
+
+<span>Suporte anfitrião</span>
+
+<strong>(84) 99921-0423</strong>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- LIXO -->
+
+<section id="lixo">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-trash"></i>
+Lixo
+</h2>
+
+<div class="card">
+
+<p style="margin-bottom:15px;">
+A lixeira fica ao lado do elevador de serviço.
+</p>
+
+<p>
+Levar o lixo no check-out.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ======================================================
+CHECK-OUT
+====================================================== -->
+
+<section id="checkout">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-door-open"></i>
+Check-out
+</h2>
+
+<!-- ======================================================
+BOX CHECKOUT
+====================================================== -->
+
+<div class="checkout-box">
+
+<h2>CHECK-OUT ATÉ 12:00H</h2>
+
+<!-- ======================================================
+LISTA CHECKOUT
+====================================================== -->
+
+<div class="checkout-list">
+
+<div class="checkout-item">
+<i class="fa-solid fa-lock"></i>
+<span>Trancar portas e janelas</span>
+</div>
+
+<div class="checkout-item">
+<i class="fa-brands fa-whatsapp"></i>
+<span>Avisar saída pelo WhatsApp</span>
+</div>
+
+<div class="checkout-item">
+<i class="fa-solid fa-suitcase"></i>
+<span>Conferir pertences</span>
+</div>
+
+<div class="checkout-item">
+<i class="fa-solid fa-snowflake"></i>
+<span>Desligar ar-condicionado</span>
+</div>
+
+<div class="checkout-item">
+<i class="fa-solid fa-broom"></i>
+<span>Certifique-se de deixar o ambiente limpo e arrumado</span>
+</div>
+
+</div>
+
+<!-- BOTÃO SAÍDA -->
+
+<a class="whatsapp-btn"
+href="https://wa.me/5584999210423"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+AVISAR SAÍDA
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+PASSEIOS
+====================================================== -->
+
+<section id="passeios">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-umbrella-beach"></i>
+Dicas de Passeios
+</h2>
+
+<div class="tour-grid">
+
+<!-- PONTA NEGRA -->
+
+<div class="tour-card">
+
+<div class="tour-icon">
+🏖️
+</div>
+
+<h3>Praia de Ponta Negra</h3>
+
+<p>
+A principal praia de Natal com ótima estrutura, restaurantes e vista para o Morro do Careca.
+</p>
+
+<a target="_blank"
+href="https://maps.google.com/?q=Praia+de+Ponta+Negra+Natal+RN">
+
+📍 Abrir no Maps
+
+</a>
+
+</div>
+
+<!-- GENIPABU -->
+
+<div class="tour-card">
+
+<div class="tour-icon">
+🐪
+</div>
+
+<h3>Dunas de Genipabu</h3>
+
+<p>
+Passeio de buggy pelas dunas com lagoas, esquibunda e belas paisagens.
+</p>
+
+<a target="_blank"
+href="https://maps.google.com/?q=Genipabu+Natal+RN">
+
+📍 Abrir no Maps
+
+</a>
+
+</div>
+
+<!-- MARACAJAÚ -->
+
+<div class="tour-card">
+
+<div class="tour-icon">
+🐠
+</div>
+
+<h3>Maracajaú</h3>
+
+<p>
+Passeio de catamarã com mergulho nos parrachos e águas cristalinas.
+</p>
+
+<a target="_blank"
+href="https://maps.google.com/?q=Maracajau+RN">
+
+📍 Abrir no Maps
+
+</a>
+
+</div>
+
+<!-- CRIANÇAS -->
+
+<div class="tour-card">
+
+<div class="tour-icon">
+🎡
+</div>
+
+<h3>Passeios para Crianças</h3>
+
+<p>
+Aquário de Natal, lagoas e praias tranquilas para toda família.
+</p>
+
+<a target="_blank"
+href="https://maps.google.com/?q=Aquario+de+Natal">
+
+📍 Abrir no Maps
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+TOP PRAIAS
+====================================================== -->
+
+<section id="praias">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-water"></i>
+Top Praias Próximas
+</h2>
+
+<div class="tour-grid">
+
+<div class="tour-card">
+
+<div class="tour-icon">
+☀️
+</div>
+
+<h3>Ponta Negra</h3>
+
+<p>
+Praia urbana com excelente estrutura turística e vida noturna.
+</p>
+
+</div>
+
+<div class="tour-card">
+
+<div class="tour-icon">
+🏝️
+</div>
+
+<h3>Camurupim</h3>
+
+<p>
+Praia com piscinas naturais e mar mais calmo para banho.
+</p>
+
+</div>
+
+<div class="tour-card">
+
+<div class="tour-icon">
+🌅
+</div>
+
+<h3>Pipa</h3>
+
+<p>
+Falésias, golfinhos e praias famosas do litoral sul.
+</p>
+
+</div>
+
+<div class="tour-card">
+
+<div class="tour-icon">
+🐚
+</div>
+
+<h3>Rio do Fogo</h3>
+
+<p>
+Destino tranquilo com visual paradisíaco e águas claras.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+ONDE COMER
+====================================================== -->
+
+<section id="restaurantes">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-utensils"></i>
+Onde Comer
+</h2>
+
+<div class="tour-grid">
+
+<!-- CAMARÕES -->
+
+<div class="tour-card">
+
+<div class="tour-icon">
+🍤
+</div>
+
+<h3>Camarões</h3>
+
+<p>
+Um dos restaurantes mais famosos de Natal especializado em frutos do mar.
+</p>
+
+<a target="_blank"
+href="https://maps.google.com/?q=Restaurante+Camaroes+Natal">
+
+📍 Abrir no Maps
+
+</a>
+
+</div>
+
+<!-- MANGAI -->
+
+<div class="tour-card">
+
+<div class="tour-icon">
+🥘
+</div>
+
+<h3>Mangai</h3>
+
+<p>
+Comida regional nordestina com ambiente amplo e muito elogiado.
+</p>
+
+<a target="_blank"
+href="https://maps.google.com/?q=Restaurante+Mangai+Natal">
+
+📍 Abrir no Maps
+
+</a>
+
+</div>
+
+<!-- NAU FRUTOS DO MAR -->
+
+<div class="tour-card">
+
+<div class="tour-icon">
+🦞
+</div>
+
+<h3>NAU Frutos do Mar</h3>
+
+<p>
+Restaurante sofisticado à beira-mar com frutos do mar, pratos refinados e ambiente premium.
+</p>
+
+<a target="_blank"
+href="https://maps.google.com/?q=NAU+Frutos+do+Mar+Natal">
+
+📍 Abrir no Maps
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ======================================================
+RODAPÉ
+====================================================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-content">
+
+<h3>Natal Verano 401A</h3>
+
+<p>
+Guia Digital Premium
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
