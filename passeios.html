@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<!--
+========================================================
+GUIA DIGITAL - NATAL VERANO 401A
+========================================================
+
+Estrutura do projeto:
+
+1. CONFIGURAÇÕES GERAIS
+2. ESTILOS CSS
+3. HERO / MENU PRINCIPAL
+4. INFORMAÇÕES GERAIS
+5. WI-FI
+6. GARAGEM
+7. REGRAS
+8. INSTRUÇÕES
+9. EQUIPAMENTOS
+10. LIXO
+11. EMERGÊNCIA
+12. CHECK-OUT
+13. RODAPÉ
+
+========================================================
+OBSERVAÇÕES IMPORTANTES
+========================================================
+
+IMAGENS UTILIZADAS:
+
+- Capa principal:
+imagens/capa2.jpg
+
+- Garagem:
+imagens/garagem.png
+
+========================================================
+PERSONALIZAÇÃO RÁPIDA
+========================================================
+
+ALTERAR TELEFONE:
+Procure por:
+5584999210423
+
+ALTERAR WIFI:
+Procure por:
+NATALVERANO401A
+apto401a
+
+ALTERAR ENDEREÇO:
+Rua da Campina nº 140
+
+========================================================
+-->
+
+<html lang="pt-BR">
+
+<head>
+
+<!-- ======================================================
+META TAGS
+====================================================== -->
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Natal Verano 401A</title>
+
+<!-- ======================================================
+FONTES GOOGLE
+====================================================== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- ======================================================
+ICONS FONT AWESOME
+====================================================== -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<!-- ======================================================
+CSS PRINCIPAL
+====================================================== -->
+
+<style>
+
+
+
+
+
+
+
+
+
+
+/* ======================================================
+CORES E VARIÁVEIS GLOBAIS
+====================================================== */
+
+:root{
+
+    --navy:#0c1b33;
+    --navy-light:#13284a;
+
+    --white:#ffffff;
+    --gray:#f4f6f9;
+
+    --text:#1f2937;
+
+    --red:#d84b4b;
+    --green:#25D366;
+
+    --shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    --radius:26px;
+}
+
+/* ======================================================
+RESET CSS
+====================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ======================================================
+SCROLL SUAVE
+====================================================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ======================================================
+BODY PRINCIPAL
+====================================================== */
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:var(--gray);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+/* ======================================================
+IMAGENS
+====================================================== */
+
+img{
+    width:100%;
+    display:block;
+    border-radius:24px;
+}
+
+/* ======================================================
+LINKS
+====================================================== */
+
+a{
+    text-decoration:none;
+}
+
+/* ======================================================
+CONTAINER PADRÃO
+====================================================== */
+
+.container{
+    width:92%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* ======================================================
+SEÇÕES
+====================================================== */
+
+section{
+    padding:70px 0;
+}
+
+/* ======================================================
+TÍTULOS DAS SEÇÕES
+====================================================== */
+
+.section-title{
+
+    font-size:2rem;
+    font-weight:700;
+
+    color:var(--navy);
+
+    margin-bottom:28px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.section-title i{
+    color:var(--red);
+}
+
+/* ======================================================
+HERO / CAPA PRINCIPAL
+====================================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(5,15,30,0.55), rgba(5,15,30,0.60)),
+    url('imagens/piscina.png') center/cover no-repeat;
+
+    background-attachment:fixed;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+/* ======================================================
+LOGO HERO
+====================================================== */
+
+.hero-logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:30px;
+}
+
+.hero-logo img{
+
+    width:240px;
+
+    max-width:80%;
+
+    object-fit:contain;
+
+    filter:
+    drop-shadow(0 10px 25px rgba(0,0,0,0.35));
+}
+
+
+
+
+
+
+.hero{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(5,15,30,0.55), rgba(5,15,30,0.60)),
+    url('imagens/piscina.png') center/cover no-repeat;
+
+    background-attachment:fixed;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+.hero-content{
+    width:100%;
+    max-width:900px;
+}
+
+.hero small{
+    color:#fff;
+    letter-spacing:6px;
+    font-size:0.9rem;
+}
+
+.hero h1{
+
+    color:#fff;
+
+    font-size:3rem;
+
+    margin-top:15px;
+
+    font-weight:700;
+}
+
+/* ======================================================
+GRID DOS BOTÕES PRINCIPAIS
+====================================================== */
+
+.hero-grid{
+
+    margin-top:40px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(120px,1fr));
+
+    gap:18px;
+}
+
+/* ======================================================
+BOTÕES DO MENU PRINCIPAL
+====================================================== */
+
+.hero-card{
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    border-radius:24px;
+
+    padding:22px 10px;
+
+    color:#fff;
+
+    transition:0.3s;
+}
+
+.hero-card:hover{
+
+    transform:translateY(-5px);
+
+    background:rgba(255,255,255,0.18);
+}
+
+.hero-card i{
+
+    font-size:1.5rem;
+
+    margin-bottom:12px;
+}
+
+.hero-card span{
+    display:block;
+    font-size:0.95rem;
+}
+
+/* ======================================================
+BOTÃO WHATSAPP
+====================================================== */
+
+.whatsapp-btn{
+
+    margin-top:35px;
+
+    display:inline-flex;
+
+    align-items:center;
+    gap:10px;
+
+    background:var(--green);
+
+    color:#fff;
+
+    padding:18px 30px;
+
+    border-radius:60px;
+
+    font-weight:600;
+
+    box-shadow:var(--shadow);
+
+    transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+    transform:scale(1.04);
+}
+
+/* ======================================================
+CARD PADRÃO
+====================================================== */
+
+.card{
+
+    background:#fff;
+
+    border-radius:var(--radius);
+
+    padding:24px;
+
+    box-shadow:var(--shadow);
+}
+
+/* ======================================================
+GRID 2 COLUNAS
+====================================================== */
+
+.grid-2{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:28px;
+}
+
+/* ======================================================
+LISTA DE INFORMAÇÕES
+====================================================== */
+
+.info-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-top:20px;
+}
+
+/* ======================================================
+ITEM DE INFORMAÇÃO
+====================================================== */
+
+.info-item{
+
+    display:flex;
+
+    gap:14px;
+
+    align-items:flex-start;
+}
+
+.info-item i{
+
+    color:var(--red);
+
+    margin-top:4px;
+}
+
+/* ======================================================
+BOTÃO MAPA
+====================================================== */
+
+.map-btn{
+
+    margin-top:22px;
+
+    display:inline-block;
+
+    background:var(--navy);
+
+    color:#fff;
+
+    padding:14px 24px;
+
+    border-radius:18px;
+
+    font-weight:500;
+}
+
+/* ======================================================
+BOX WIFI
+====================================================== */
+
+.wifi-box{
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+.wifi-box h3{
+
+    color:var(--navy);
+
+    margin-bottom:20px;
+
+    font-size:1.8rem;
+}
+
+/* ======================================================
+CARTÕES WIFI
+====================================================== */
+
+.wifi-data{
+
+    margin:14px 0;
+
+    background:var(--gray);
+
+    border-radius:18px;
+
+    padding:18px;
+}
+
+.wifi-data strong{
+
+    display:block;
+
+    color:var(--red);
+
+    margin-bottom:8px;
+}
+
+/* ======================================================
+LISTA DE REGRAS
+====================================================== */
+
+.rules-list{
+
+    display:grid;
+
+    gap:18px;
+}
+
+.rule-item{
+
+    background:#fff;
+
+    padding:20px;
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.rule-item i{
+
+    color:var(--red);
+
+    font-size:1.2rem;
+}
+
+/* ======================================================
+INSTRUÇÕES
+====================================================== */
+
+.instructions{
+
+    display:grid;
+
+    gap:18px;
+}
+
+.instruction-card{
+
+    background:#fff;
+
+    padding:24px;
+
+    border-radius:24px;
+
+    box-shadow:var(--shadow);
+}
+
+.instruction-card h4{
+
+    margin-bottom:10px;
+
+    color:var(--navy);
+}
+
+/* ======================================================
+EQUIPAMENTOS
+====================================================== */
+
+/* ======================================================
+EQUIPAMENTOS
+====================================================== */
+
+.equip-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:18px;
+
+    align-items:stretch;
+}
+
+.equip-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:20px 12px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    min-height:185px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:flex-start;
+}
+
+.equip-card i{
+
+    width:54px;
+
+    height:54px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:#f4f6f9;
+
+    color:var(--navy);
+
+    font-size:1.45rem;
+
+    margin-bottom:14px;
+
+    flex-shrink:0;
+}
+
+.equip-card p{
+
+    font-size:0.95rem;
+
+    font-weight:600;
+
+    line-height:1.25;
+
+    min-height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+}
+
+.equip-card small{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    justify-content:center;
+
+    text-align:center;
+
+    line-height:1.35;
+
+    color:#6b7280;
+
+    font-size:0.8rem;
+
+    min-height:42px;
+
+    margin-top:8px;
+}
+
+/* TABLET */
+
+@media(max-width:1100px){
+
+    .equip-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+}
+
+/* CELULAR */
+
+@media(max-width:768px){
+
+    .equip-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .equip-card{
+
+        min-height:170px;
+    }
+
+    .equip-card i{
+
+        width:48px;
+
+        height:48px;
+
+        font-size:1.3rem;
+    }
+}
+
+@media(max-width:520px){
+
+    .equip-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:14px;
+    }
+
+    .equip-card{
+
+        min-height:165px;
+
+        padding:18px 10px;
+    }
+
+    .equip-card i{
+
+        width:42px;
+
+        height:42px;
+
+        font-size:1.15rem;
+    }
+
+    .equip-card p{
+
+        font-size:0.88rem;
+    }
+
+    .equip-card small{
+
+        font-size:0.75rem;
+    }
+}
+
+
+
+
+/* ======================================================
+EMERGÊNCIA
+====================================================== */
+
+.emergency-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    margin-top:30px;
+}
+
+.emergency-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:28px 20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:0.3s;
+}
+
+.emergency-card:hover{
+
+    transform:translateY(-4px);
+}
+
+.emergency-icon{
+
+    width:64px;
+
+    height:64px;
+
+    margin:auto;
+
+    margin-bottom:18px;
+
+    border-radius:20px;
+
+    background:#f4f6f9;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--red);
+
+    font-size:1.5rem;
+}
+
+.emergency-card span{
+
+    display:block;
+
+    color:#6b7280;
+
+    margin-bottom:10px;
+}
+
+.emergency-card strong{
+
+    color:var(--navy);
+
+    font-size:1.3rem;
+}
+
+/* ======================================================
+CHECKOUT
+====================================================== */
+
+.checkout-box{
+
+    background:#fff;
+
+    border-radius:32px;
+
+    padding:40px;
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+}
+
+.checkout-box h2{
+
+    color:var(--navy);
+
+    margin-bottom:28px;
+
+    font-size:2rem;
+}
+
+.checkout-list{
+
+    display:grid;
+
+    gap:16px;
+
+    margin-bottom:30px;
+}
+
+.checkout-item{
+
+    background:#f4f6f9;
+
+    border-radius:18px;
+
+    padding:18px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    font-weight:500;
+
+    color:var(--text);
+}
+
+.checkout-item i{
+
+    color:var(--red);
+
+    font-size:1.1rem;
+}
+
+
+
+
+
+
+/* ======================================================
+PASSEIOS / RESTAURANTES
+====================================================== */
+
+.tour-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:22px;
+
+    margin-top:25px;
+}
+
+.tour-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.tour-card:hover{
+
+    transform:translateY(-4px);
+}
+
+.tour-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:18px;
+
+    background:#eef5ff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+    margin-bottom:18px;
+}
+
+.tour-card h3{
+
+    color:#2c5d8a;
+
+    margin-bottom:12px;
+
+    font-size:20px;
+}
+
+.tour-card p{
+
+    color:#555;
+
+    line-height:1.6;
+
+    margin-bottom:18px;
+
+    font-size:15px;
+}
+
+.tour-card a{
+
+    display:inline-block;
+
+    color:#2c5d8a;
+
+    font-weight:600;
+
+    text-decoration:none;
+}
+
+.tour-card a:hover{
+
+    text-decoration:underline;
+}
+
+/* ======================================================
+FOOTER
+====================================================== */
+
+footer{
+
+    background:var(--navy);
+
+    color:#fff;
+
+    padding:50px 20px;
+
+    margin-top:60px;
+}
+
+.footer-content{
+
+    text-align:center;
+}
+
+.footer-content h3{
+
+    margin-bottom:10px;
+
+    font-size:1.5rem;
+}
+
+.footer-content p{
+
+    opacity:0.8;
+}
+
+
+/* ======================================================
+BOTÃO VOLTAR AO TOPO
+====================================================== */
+
+.back-top{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.back-top a{
+    background:rgba(12,27,51,0.08);
+    color:var(--navy);
+    padding:12px 18px;
+    border-radius:999px;
+    font-size:0.9rem;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.back-top a:hover{
+    background:var(--navy);
+    color:#fff;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero" style="min-height:55vh;">
+
+<div class="hero-content">
+
+<div class="hero-logo">
+<img src="imagens/logo.png" alt="Natal Verano">
+</div>
+
+<small>NATAL VERANO 401A</small>
+
+<h1 style="color:white;margin-top:20px;">
+Passeios e Gastronomia
+</h1>
+
+<div class="hero-grid" style="margin-top:35px;">
+
+<a href="#passeios" class="hero-card">
+<i class="fa-solid fa-umbrella-beach"></i>
+<span>Passeios</span>
+</a>
+
+<a href="#praias" class="hero-card">
+<i class="fa-solid fa-water"></i>
+<span>Praias</span>
+</a>
+
+<a href="#restaurantes" class="hero-card">
+<i class="fa-solid fa-utensils"></i>
+<span>Restaurantes</span>
+</a>
+
+<a href="index.html" class="hero-card">
+<i class="fa-solid fa-house"></i>
+<span>Voltar</span>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+PASSEIOS
+====================================================== -->
+
+<section id="passeios">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-umbrella-beach"></i>
+Dicas de Passeios
+</h2>
+
+<div class="tour-grid">
+
+<div class="tour-card">
+<div class="tour-icon">🏖️</div>
+<h3>Praia de Ponta Negra</h3>
+<p>A principal praia de Natal com ótima estrutura, restaurantes e vista para o Morro do Careca.</p>
+<a target="_blank" href="https://maps.google.com/?q=Praia+de+Ponta+Negra+Natal+RN">📍 Abrir no Maps</a>
+</div>
+
+<div class="tour-card">
+<div class="tour-icon">🐪</div>
+<h3>Dunas de Genipabu</h3>
+<p>Passeio de buggy pelas dunas com lagoas, esquibunda e belas paisagens.</p>
+<a target="_blank" href="https://maps.google.com/?q=Genipabu+Natal+RN">📍 Abrir no Maps</a>
+</div>
+
+<div class="tour-card">
+<div class="tour-icon">🐠</div>
+<h3>Maracajaú</h3>
+<p>Passeio de catamarã com mergulho nos parrachos e águas cristalinas.</p>
+<a target="_blank" href="https://maps.google.com/?q=Maracajau+RN">📍 Abrir no Maps</a>
+</div>
+
+<div class="tour-card">
+<div class="tour-icon">🎡</div>
+<h3>Passeios para Crianças</h3>
+<p>Aquário de Natal, lagoas e praias tranquilas para toda família.</p>
+<a target="_blank" href="https://maps.google.com/?q=Aquario+de+Natal">📍 Abrir no Maps</a>
+</div>
+
+</div>
+
+<div class="back-top"><a href="#">↑ Voltar ao menu</a></div>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+TOP PRAIAS
+====================================================== -->
+
+<section id="praias">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-water"></i>
+Top Praias Próximas
+</h2>
+
+<div class="tour-grid">
+
+<div class="tour-card">
+<div class="tour-icon">☀️</div>
+<h3>Ponta Negra</h3>
+<p>Praia urbana com excelente estrutura turística e vida noturna.</p>
+</div>
+
+<div class="tour-card">
+<div class="tour-icon">🏝️</div>
+<h3>Camurupim</h3>
+<p>Praia com piscinas naturais e mar mais calmo para banho.</p>
+</div>
+
+<div class="tour-card">
+<div class="tour-icon">🌅</div>
+<h3>Pipa</h3>
+<p>Falésias, golfinhos e praias famosas do litoral sul.</p>
+</div>
+
+<div class="tour-card">
+<div class="tour-icon">🐚</div>
+<h3>Rio do Fogo</h3>
+<p>Destino tranquilo com visual paradisíaco e águas claras.</p>
+</div>
+
+</div>
+
+<div class="back-top"><a href="#">↑ Voltar ao menu</a></div>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+ONDE COMER
+====================================================== -->
+
+<section id="restaurantes">
+
+<div class="container">
+
+<h2 class="section-title">
+<i class="fa-solid fa-utensils"></i>
+Onde Comer
+</h2>
+
+<div class="tour-grid">
+
+<div class="tour-card">
+<div class="tour-icon">🍤</div>
+<h3>Camarões</h3>
+<p>Um dos restaurantes mais famosos de Natal especializado em frutos do mar.</p>
+<a target="_blank" href="https://maps.google.com/?q=Restaurante+Camaroes+Natal">📍 Abrir no Maps</a>
+</div>
+
+<div class="tour-card">
+<div class="tour-icon">🥘</div>
+<h3>Mangai</h3>
+<p>Comida regional nordestina com ambiente amplo e muito elogiado.</p>
+<a target="_blank" href="https://maps.google.com/?q=Restaurante+Mangai+Natal">📍 Abrir no Maps</a>
+</div>
+
+<div class="tour-card">
+<div class="tour-icon">🦞</div>
+<h3>NAU Frutos do Mar</h3>
+<p>Restaurante sofisticado à beira-mar com frutos do mar, pratos refinados e ambiente premium.</p>
+<a target="_blank" href="https://maps.google.com/?q=NAU+Frutos+do+Mar+Natal">📍 Abrir no Maps</a>
+</div>
+
+</div>
+
+<div class="back-top"><a href="#">↑ Voltar ao menu</a></div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+RODAPÉ
+====================================================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-content">
+
+<h3>Natal Verano 401A</h3>
+
+<p>
+Guia Digital Premium
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>

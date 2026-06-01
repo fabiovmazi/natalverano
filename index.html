@@ -38,7 +38,7 @@ PERSONALIZAÇÃO RÁPIDA
 
 ALTERAR TELEFONE:
 Procure por:
-5584999210423
+5584994882727
 
 ALTERAR WIFI:
 Procure por:
@@ -762,44 +762,37 @@ EMERGÊNCIA
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:repeat(4,1fr);
 
-    gap:20px;
+    gap:10px;
 
-    margin-top:30px;
+    margin-top:20px;
 }
 
 .emergency-card{
 
     background:#fff;
 
-    border-radius:24px;
+    border-radius:18px;
 
-    padding:28px 20px;
+    padding:14px 8px;
 
     text-align:center;
 
-    box-shadow:var(--shadow);
-
-    transition:0.3s;
-}
-
-.emergency-card:hover{
-
-    transform:translateY(-4px);
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
 .emergency-icon{
 
-    width:64px;
+    width:42px;
 
-    height:64px;
+    height:42px;
 
     margin:auto;
 
-    margin-bottom:18px;
+    margin-bottom:10px;
 
-    border-radius:20px;
+    border-radius:14px;
 
     background:#f4f6f9;
 
@@ -809,9 +802,9 @@ EMERGÊNCIA
 
     justify-content:center;
 
-    color:var(--red);
+    color:#d84b4b;
 
-    font-size:1.5rem;
+    font-size:1rem;
 }
 
 .emergency-card span{
@@ -820,15 +813,30 @@ EMERGÊNCIA
 
     color:#6b7280;
 
-    margin-bottom:10px;
+    margin-bottom:5px;
+
+    font-size:0.72rem;
+
+    line-height:1.2;
 }
 
 .emergency-card strong{
 
-    color:var(--navy);
+    color:#0c1b33;
 
-    font-size:1.3rem;
+    font-size:0.82rem;
 }
+
+/* CELULAR */
+
+@media(max-width:768px){
+
+    .emergency-grid{
+
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
 
 /* ======================================================
 CHECKOUT
@@ -986,6 +994,33 @@ PASSEIOS / RESTAURANTES
     text-decoration:underline;
 }
 
+
+/* ======================================================
+BOTÃO VOLTAR AO TOPO
+====================================================== */
+
+.back-top{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.back-top a{
+    background:rgba(12,27,51,0.08);
+    color:var(--navy);
+    padding:12px 18px;
+    border-radius:999px;
+    font-size:0.9rem;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.back-top a:hover{
+    background:var(--navy);
+    color:#fff;
+}
+
+
 /* ======================================================
 FOOTER
 ====================================================== */
@@ -1016,6 +1051,100 @@ footer{
 .footer-content p{
 
     opacity:0.8;
+}
+
+
+
+
+/* ======================================================
+RESPONSIVO MOBILE
+====================================================== */
+
+@media(max-width:768px){
+
+    /* GRID MOBILE */
+
+    .grid-2{
+
+        grid-template-columns:1fr !important;
+
+        gap:18px;
+    }
+
+    /* IMAGEM GERAL */
+
+    #geral img{
+
+        width:100% !important;
+
+        height:340px !important;
+
+        object-fit:cover;
+
+        border-radius:26px !important;
+    }
+
+    /* IMAGEM WIFI */
+
+    #wifi img{
+
+        width:100% !important;
+
+        height:260px !important;
+
+        object-fit:cover;
+
+        border-radius:26px !important;
+    }
+
+    /* IMAGEM GARAGEM */
+
+    #garagem img{
+
+        width:100% !important;
+
+        height:auto !important;
+
+        object-fit:contain;
+
+        border-radius:26px !important;
+    }
+
+    /* CARD GERAL */
+
+    #geral .card{
+
+        padding:26px !important;
+
+        border-radius:28px !important;
+    }
+
+    /* BADGE DA FOTO */
+
+    #geral [style*="position:absolute"]{
+
+        position:relative !important;
+
+        bottom:auto !important;
+
+        left:auto !important;
+
+        margin-top:14px;
+
+        width:100%;
+    }
+
+    /* HERO MOBILE */
+
+    .hero{
+
+        background-position:center center !important;
+
+        background-size:cover !important;
+
+        background-attachment:scroll !important;
+    }
+
 }
 
 </style>
@@ -1102,7 +1231,7 @@ alt="Natal Verano">
 </a>
 
 <!-- BOTÃO CONTATO -->
-<a href="https://wa.me/5584999210423" 
+<a href="https://wa.me/5584994882727" 
 class="hero-card"
 target="_blank">
 
@@ -1119,7 +1248,7 @@ target="_blank">
 
 
 <!-- Passeios -->
-<a href="#passeios" class="hero-card">
+<a href="passeios.html" class="hero-card">
 <i class="fa-solid fa-umbrella-beach"></i>
 <span>Passeios</span>
 </a>
@@ -1131,7 +1260,7 @@ target="_blank">
 <!-- BOTÃO WHATSAPP -->
 
 <a class="whatsapp-btn"
-href="https://wa.me/5584999210423"
+href="https://wa.me/5584994882727"
 target="_blank">
 
 <i class="fa-brands fa-whatsapp"></i>
@@ -1257,7 +1386,7 @@ Rua da Campina nº 140
 <i class="fa-solid fa-phone"></i>
 <div>
 <strong>Telefone</strong><br>
-(84) 99921-0423
+(84) 99488-2727
 </div>
 </div>
 
@@ -1450,7 +1579,7 @@ A foto pode ser enviada por apenas um dos hóspedes
 </div>
 
 <a class="whatsapp-btn"
-href="https://wa.me/5584999210423"
+href="https://wa.me/5584994882727"
 target="_blank"
 style="margin-top:28px;">
 
@@ -1532,7 +1661,7 @@ Não compartilhe sua senha com terceiros ou na portaria.
 
 
 
-
+<div class="back-top"><a href="#">↑ Voltar ao menu</a></div>
 
 
 
@@ -1573,6 +1702,8 @@ apto401a
 </div>
 
 </section>
+
+<div class="back-top"><a href="#">↑ Voltar ao menu</a></div>
 
 <!-- GARAGEM -->
 
@@ -1635,7 +1766,9 @@ Uso obrigatório do elevador de serviço para malas, compras, roupas de banho e 
 
 </section>
 
-<!-- REGRAS -->
+<div class="back-top"><a href="#">↑ Voltar ao menu</a></div>
+
+<!-- REGRAS do Apartamento -->
 
 <section id="regras">
 
@@ -1674,7 +1807,10 @@ Não usar toalhas para maquiagem (taxa extra)
 
 </section>
 
-<!-- INSTRUÇÕES -->
+<div class="back-top"><a href="#">↑ Voltar ao menu</a></div>
+
+
+<!-- INSTRUÇÕES DO APRTAMENTE  -->
 
 <section id="instrucoes">
 
@@ -1742,7 +1878,7 @@ Mantenha as janelas fechadas em caso de chuva ou ao sair do apartamento.
 
 </section>
 
-
+<div class="back-top"><a href="#">↑ Voltar ao menu</a></div>
 
 <!-- EQUIPAMENTOS -->
 
@@ -2174,7 +2310,7 @@ UTENSÍLIOS
 
 </section>
 
-
+<div class="back-top"><a href="#">↑ Voltar ao menu</a></div>
 
 
 <!-- ======================================================
@@ -2248,7 +2384,7 @@ GRID DE EMERGÊNCIA
 
 <span>Suporte anfitrião</span>
 
-<strong>(84) 99921-0423</strong>
+<strong>(84) 99488-2727</strong>
 
 </div>
 
@@ -2262,7 +2398,7 @@ GRID DE EMERGÊNCIA
 
 
 
-
+<div class="back-top"><a href="#">↑ Voltar ao menu</a></div>
 
 <!-- LIXO -->
 
@@ -2292,7 +2428,7 @@ Levar o lixo no check-out.
 </section>
 
 
-
+<div class="back-top"><a href="#">↑ Voltar ao menu</a></div>
 
 
 <!-- ======================================================
@@ -2352,7 +2488,7 @@ LISTA CHECKOUT
 <!-- BOTÃO SAÍDA -->
 
 <a class="whatsapp-btn"
-href="https://wa.me/5584999210423"
+href="https://wa.me/5584994882727"
 target="_blank">
 
 <i class="fa-brands fa-whatsapp"></i>
@@ -2368,285 +2504,11 @@ AVISAR SAÍDA
 </section>
 
 
-<!-- ======================================================
-PASSEIOS
-====================================================== -->
 
-<section id="passeios">
 
-<div class="container">
 
-<h2 class="section-title">
-<i class="fa-solid fa-umbrella-beach"></i>
-Dicas de Passeios
-</h2>
 
-<div class="tour-grid">
 
-<!-- PONTA NEGRA -->
-
-<div class="tour-card">
-
-<div class="tour-icon">
-🏖️
-</div>
-
-<h3>Praia de Ponta Negra</h3>
-
-<p>
-A principal praia de Natal com ótima estrutura, restaurantes e vista para o Morro do Careca.
-</p>
-
-<a target="_blank"
-href="https://maps.google.com/?q=Praia+de+Ponta+Negra+Natal+RN">
-
-📍 Abrir no Maps
-
-</a>
-
-</div>
-
-<!-- GENIPABU -->
-
-<div class="tour-card">
-
-<div class="tour-icon">
-🐪
-</div>
-
-<h3>Dunas de Genipabu</h3>
-
-<p>
-Passeio de buggy pelas dunas com lagoas, esquibunda e belas paisagens.
-</p>
-
-<a target="_blank"
-href="https://maps.google.com/?q=Genipabu+Natal+RN">
-
-📍 Abrir no Maps
-
-</a>
-
-</div>
-
-<!-- MARACAJAÚ -->
-
-<div class="tour-card">
-
-<div class="tour-icon">
-🐠
-</div>
-
-<h3>Maracajaú</h3>
-
-<p>
-Passeio de catamarã com mergulho nos parrachos e águas cristalinas.
-</p>
-
-<a target="_blank"
-href="https://maps.google.com/?q=Maracajau+RN">
-
-📍 Abrir no Maps
-
-</a>
-
-</div>
-
-<!-- CRIANÇAS -->
-
-<div class="tour-card">
-
-<div class="tour-icon">
-🎡
-</div>
-
-<h3>Passeios para Crianças</h3>
-
-<p>
-Aquário de Natal, lagoas e praias tranquilas para toda família.
-</p>
-
-<a target="_blank"
-href="https://maps.google.com/?q=Aquario+de+Natal">
-
-📍 Abrir no Maps
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ======================================================
-TOP PRAIAS
-====================================================== -->
-
-<section id="praias">
-
-<div class="container">
-
-<h2 class="section-title">
-<i class="fa-solid fa-water"></i>
-Top Praias Próximas
-</h2>
-
-<div class="tour-grid">
-
-<div class="tour-card">
-
-<div class="tour-icon">
-☀️
-</div>
-
-<h3>Ponta Negra</h3>
-
-<p>
-Praia urbana com excelente estrutura turística e vida noturna.
-</p>
-
-</div>
-
-<div class="tour-card">
-
-<div class="tour-icon">
-🏝️
-</div>
-
-<h3>Camurupim</h3>
-
-<p>
-Praia com piscinas naturais e mar mais calmo para banho.
-</p>
-
-</div>
-
-<div class="tour-card">
-
-<div class="tour-icon">
-🌅
-</div>
-
-<h3>Pipa</h3>
-
-<p>
-Falésias, golfinhos e praias famosas do litoral sul.
-</p>
-
-</div>
-
-<div class="tour-card">
-
-<div class="tour-icon">
-🐚
-</div>
-
-<h3>Rio do Fogo</h3>
-
-<p>
-Destino tranquilo com visual paradisíaco e águas claras.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ======================================================
-ONDE COMER
-====================================================== -->
-
-<section id="restaurantes">
-
-<div class="container">
-
-<h2 class="section-title">
-<i class="fa-solid fa-utensils"></i>
-Onde Comer
-</h2>
-
-<div class="tour-grid">
-
-<!-- CAMARÕES -->
-
-<div class="tour-card">
-
-<div class="tour-icon">
-🍤
-</div>
-
-<h3>Camarões</h3>
-
-<p>
-Um dos restaurantes mais famosos de Natal especializado em frutos do mar.
-</p>
-
-<a target="_blank"
-href="https://maps.google.com/?q=Restaurante+Camaroes+Natal">
-
-📍 Abrir no Maps
-
-</a>
-
-</div>
-
-<!-- MANGAI -->
-
-<div class="tour-card">
-
-<div class="tour-icon">
-🥘
-</div>
-
-<h3>Mangai</h3>
-
-<p>
-Comida regional nordestina com ambiente amplo e muito elogiado.
-</p>
-
-<a target="_blank"
-href="https://maps.google.com/?q=Restaurante+Mangai+Natal">
-
-📍 Abrir no Maps
-
-</a>
-
-</div>
-
-<!-- NAU FRUTOS DO MAR -->
-
-<div class="tour-card">
-
-<div class="tour-icon">
-🦞
-</div>
-
-<h3>NAU Frutos do Mar</h3>
-
-<p>
-Restaurante sofisticado à beira-mar com frutos do mar, pratos refinados e ambiente premium.
-</p>
-
-<a target="_blank"
-href="https://maps.google.com/?q=NAU+Frutos+do+Mar+Natal">
-
-📍 Abrir no Maps
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
 
 
 
