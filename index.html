@@ -734,6 +734,79 @@ EQUIPAMENTOS
 
 
 
+/* ======================================================
+LIXO
+====================================================== */
+
+.lixo-box{
+
+    background:#fff;
+
+    border-radius:32px;
+
+    padding:40px;
+
+    box-shadow:var(--shadow);
+}
+
+.lixo-list{
+
+    display:grid;
+
+    gap:16px;
+
+    margin-top:28px;
+}
+
+.lixo-item{
+
+    background:#f4f6f9;
+
+    border-radius:18px;
+
+    padding:18px 20px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    color:var(--text);
+
+    line-height:1.5;
+}
+
+.lixo-item i{
+
+    color:var(--red);
+
+    font-size:1.1rem;
+
+    margin-top:2px;
+}
+
+.lixo-item strong{
+
+    color:var(--navy);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .lixo-box{
+
+        padding:28px 22px;
+    }
+
+    .lixo-item{
+
+        padding:16px;
+    }
+}
+
+
 
 /* ======================================================
 EMERGÊNCIA
@@ -2479,30 +2552,47 @@ GRID DE EMERGÊNCIA
 
 <!-- LIXO -->
 
+
+
 <section id="lixo">
 
 <div class="container">
 
+<div class="lixo-box">
+
 <h2 class="section-title">
 <i class="fa-solid fa-trash"></i>
-Lixo
+Coleta de Lixo
 </h2>
 
-<div class="card">
+<div class="lixo-list">
 
-<p style="margin-bottom:15px;">
+<div class="lixo-item">
+<i class="fa-solid fa-circle-info"></i>
+<div>
+<strong>Coleta diária:</strong><br>
 A lixeira fica ao lado do elevador de serviço.
-</p>
+</div>
+</div>
 
-<p>
-Levar o lixo no check-out.
-</p>
+<div class="lixo-item">
+<i class="fa-solid fa-recycle"></i>
+<div>
+<strong>Ajude na organização:</strong><br>
+Evite deixar sacolas nos corredores do condomínio.
+</div>
+</div>
+
+
+
+</div>
 
 </div>
 
 </div>
 
 </section>
+
 
 
 <div class="back-top"><a href="#">↑ Voltar ao menu</a></div>
